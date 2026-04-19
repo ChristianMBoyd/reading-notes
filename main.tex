@@ -212,6 +212,26 @@ Exhibit 7 is a curious study analysis where the geometric annual returns are art
 My takeaway here is a trend from related papers that long-term returns really need to be understood through metrics defined over equally long periods.  For example, there's a recurring trend that stocks appear less risky over the long-term in terms of expected returns.  I.e., not only are their expeceted returns higher, which is consistent with annualized metrics of risk, but their {\it risk} decreases based on the investment horizon.  It's worth looking into further studies of risk metrics over long periods, and coming to terms with the fact that avilable historical data becomes much more restricted when the autocorrelation is relevant over long investment periods.
 
 
+\section{Brian J. Alleva -- Discount Rate Specification and the Social Security Claiming Decision}
+
+In \cite{Alleva2016}, the author analyzes the Optimal Claiming Age (OCA) for social security benefits, based on a discounted cash flow model across a range of discount rates.  The author notes that previous studies have enforced a government bond-like rate (the rate actually used to fund the social security trust), which may not necessarily hold.  An interesting perspective is note that social security is compulsory, or pre-ordained, vs. something sought out on capital markets.  This is to say that some people claiming social security may not have chosen this investment vehicle if given the option, and so they may not be valuing the income stream strictly as an annuity they went out and purchased.
+
+The trend is stated at the start: discounting by a lower rate (e.g., US bonds) suggests picking at 70, discounting by a higher rate (e.g., an aggressive stock portfolio) suggests picking at 62; i.e. the bounds of social security OCA are set pretty quickly at either end of the discount rate.  Curiously, there is still somewhat elevated risk due to lifetime expectancy associated with deferring benefits until 70; i.e., those using a small discount rate may be under-valuing the probability of not living long enough to enjoy the increased social security payout.  Alternatively, those using a higher discount rate are much more likely to maximize their utility (if that rate reflects reality).  Another curiosity is that the OCA appears to vary rapidly near somewhat conservative discount rates near 4\%, so that the OCA changes from 70 to 62 across a 1\% range.  
+
+\note{[Note]}: to me, the above suggests that the OCA--as defined in the text--could be difficult to determine in practice.  Or, rather, the real claiming age chosen may have more to do with work suitabilty, income opportunity, and/or medicare benefits than a purely discounted cashflow analysis.
+
+\note{[Note]}: it looks like this article is using {\it real} rates of return to discount social security, as the payouts track inflation at least somewhat due to the Cost Of Living Adjustment (COLA).
+
+The plots (Charts 1-3) of death age or probability of optimal claiming age range vs. discount rate are pretty interesting.  For women, there is a much larger range that should seriously consider deferring until 70.  For men, the result are more mixed, skewing toward 62 for somewhat-risky rates of return like 4\%.
+
+The plots (Charts 4 and 5) of OCA and Expected Opportunity Loss (EOL) for men and women seem to indicate that 62 is the OCA unless discounting by an extremely (less than 50/50 stocks/bonds) conservative portfolio.  It would be interesting to consider when this would actually be the case.  I suppose this is the statement that claiming social security at 62 to simple store it in a 1\% interest savings account is not worth it.  Alternatie uses like spending the money instead of taking on debt, or spending social security instead of drawing down medium-to-high risk portfolios, appear to strongly suggest claiming social security sooner than later.
+
+\note{[Note]}: there is some discussion to the above point of how fund usage relates to discount rate in the ``Implied Discount Rates'' section.
+
+
+\note{[Takeaway]}: I initially had heard that delaying social security made sense, to maximize the payout given that modern lifetimes are expected to increase relative to the benchmarks used to create social security payouts.  After more research in general, but also after reading this paper, I feel like there is a lot of risk related to deferring even if that cash amount may be higher.  Given how moderate of a portfolio is needed to exceed the implied discount rate associated with waiting past 62, it seems like there is little need to delay other than working, which I felt was ignored by this study.  This is to say that if you are planning on retiring, I imagine your retirement accounts will earn sufficiently much so that you should claim immediately.  If you plan on working through your 60s, of course, then I suspect your earnings exceed the tax-penalized payouts from claiming social security early.
+
+
 
 
 \bibliographystyle{unsrturl}
