@@ -234,7 +234,17 @@ The plots (Charts 4 and 5) of OCA and Expected Opportunity Loss (EOL) for men an
 
 \section{Wikipedia article on random walk}
 
-I need to brush up on my basic mathematical statistics/probability, so I thought it would be fun to do a deep dive on random walks, starting from the Wikipedia article \cite{RandomWalk2026}.
+I need to brush up on my basic mathematical statistics/probability, so I thought it would be fun to do a deep dive on random walks, starting from the Wikipedia article \cite{RandomWalk2026}.  I'd drawn some patterns to see that the distribution for a given set of steps is related to the $n$th level of Pascal's triangle \cite{PaslcalsTriangle2026}, but the easier way to understand it is to realize that the final position on an integer line is to consider $n$ independent rolls of $\pm1$.  Then,
+\begin{equation}
+    \text{E}(S_n) = \sum_{i=1}^n Z_i = 0\quad ,
+\end{equation}
+and 
+\begin{equation}
+    \text{E}(S_n^2) = \sum_{i,j = 1}^n Z_i Z_j = \sum_{i=1}^n Z_i^2 = n
+\end{equation}
+where $S_n$ is the final position relative to starting at 0 on the integer line, and $Z_i$ are independent random variables, whose value is either $\pm1$.  Notably, the fact that each increment of $\pm1$ is independent of prior results is what eliminates any cross terms in the variance.
+
+There is a lot of interesting discussion, but one point I found interesting was the application to the gambler's ruin \cite{GamblersRuin2026}.  Because the variance grows with the number of steps as $\sqrt{n}$, any point is reachable with finite probability for sufficiently large $n$.  This is to say that a gambler playing a fair game (expected outcome of 0) against an opponent with infinite wealth (e.g., a toy model of a casino) will eventually lose everything, as their outcome will randomly walk through 0 no matter how far ahead they start.
 
 
 
