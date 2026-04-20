@@ -246,6 +246,10 @@ where $S_n$ is the final position relative to starting at 0 on the integer line,
 
 There is a lot of interesting discussion, but one point I found interesting was the application to the gambler's ruin \cite{GamblersRuin2026}.  Because the variance grows with the number of steps as $\sqrt{n}$, any point is reachable with finite probability for sufficiently large $n$.  This is to say that a gambler playing a fair game (expected outcome of 0) against an opponent with infinite wealth (e.g., a toy model of a casino) will eventually lose everything, as their outcome will randomly walk through 0 no matter how far ahead they start.
 
+Naturally, I was drawn toward this model as I've heard it frequently referenced in finance, particularly w/r/t the random walk hypothesis \cite{RandomWalkHypothesis2026}, where it's hypothesized that stocks follow a random walk about some mean increase.  Much of that Wikipedia page is dedicated toward ``debunking'' this statement in terms of its quantitative consequences, but of course one should understand the idea.
+
+I'd heard of a similar, biased walk discussed in terms of the probability distribution of stock returns.  For example, consider a stock with price $p$ that moves up or down in price by $\epsilon p$, and does so--proportionately--at every step.  The conversational claim was that this would naturally produce a skewed distribution toward unlikely but large gains, both due to bounding the price $p>0$ and to the exponential growth of a lucky streak.
+
 
 
 
