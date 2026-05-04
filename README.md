@@ -1,3 +1,3 @@
-# tex-template
+# reading-notes
 
-The included .tex and .bib files provide a bare bones TeX template that compiles.
+These are my personal reading notes on articles, books, or other materials that are loosely related to finance and financial planning.
